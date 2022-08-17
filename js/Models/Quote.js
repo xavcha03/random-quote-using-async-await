@@ -1,35 +1,35 @@
 class Quote{
-    constructor(quote){
-        this.quote = quote.quote;
-        this.author = quote.author;
-        this.id = quote.id;
-        this.permalink = quote.permalink;
-        this.photo = quote.photo;
-        this.gender = quote.gender;
-        this.slug = quote.slug;
-        this.totalQuotes = quote.totalQuotes;
+    constructor(data){
+        this._quote = data.quote;
+        this._author = data.author;
+        this._id = data.id;
+        this._permalink = data.permalink;
+        this._photo = data.photo;
+        this._gender = data.gender;
+        this._slug = data.slug;
+        this._totalQuotes = data.totalQuotes;
     }
 
     get quote(){
-        return this.quote;
+        return this._quote;
     }
 
     get author(){
-        return this.author;
+        return this._author;
     }
     get id(){
-        return this.id;
+        return this._id;
     }
     get permalink(){
         return this.permalink;
     }
     get photo(){
-        return this.photo;
+        return this._photo;
     }
     get gender(){
-        return this.gender;
+        return this._gender;
     }
     get slug(){
-        return this.slug;
+        return this._slug;
     }
 }
